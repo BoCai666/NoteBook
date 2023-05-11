@@ -1,5 +1,13 @@
 # Git 命令
 
+- ## 创建
+
+  - **git clone：**克隆仓库
+
+    ```
+    git clone <仓库地址> <文件夹名>
+    ```
+
 - ## 配置
 
   - **git config --global user.name "用户名"：** 配置用户名
