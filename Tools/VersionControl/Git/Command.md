@@ -1,5 +1,13 @@
 # Git 命令
 
+- ## 创建
+
+  - **git clone：**克隆仓库
+
+    ```
+    git clone <仓库地址> <文件夹名>
+    ```
+
 - ## 配置
 
   - **git config --global user.name "用户名"：** 配置用户名
@@ -23,3 +31,13 @@
     ```
 
   - **git push：** 推送本地缓存区的文件至远程仓库
+
+- ## 拉取
+
+  - **git pull：**拉取远程文件并与本地版本合并， 是`git fetch` 和 `git merge FETCH_HEAD` 的简写
+
+    ```
+    git pull <远程主机名> <远程分支名>:<本地分支名>
+    ```
+
+    
