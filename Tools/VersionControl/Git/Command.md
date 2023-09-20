@@ -44,7 +44,7 @@
     git commit --amend: 修改最后一次提交，即用新的提交覆盖旧的提交
     ```
 
-  - **git push：** 推送本地缓存区的文件至远程仓库
+  - **git push：** 推送本地仓库的文件至远程仓库
 
 - ## 拉取
 
@@ -52,6 +52,14 @@
 
     ```
     git pull <远程主机名> <远程分支名>:<本地分支名>
+    ```
+- ## 撤销
+  - **git reset：** 撤销commit
+    
+    ```
+    --soft // 不删除工作空间的改动，撤销commit，不撤销add file
+    --hard // 删除工作空间的改动，撤销commit，并撤销add file
+    git reset --soft HEAD~2 // 表示撤销前两次的commit 
     ```
 - ## 远程
   - **git remote：** 远程仓库
