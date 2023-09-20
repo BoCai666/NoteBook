@@ -7,6 +7,14 @@
     ```
     git clone <仓库地址> <文件夹名>
     ```
+  - **git checkout**
+    ```
+    git checkout 文件名	// 撤销对文件的修改 
+    ```
+  - **git status：** 查看当前仓库状态
+  
+  - **git log**: 查看提交历史
+  
 
 - ## 配置
 
@@ -16,7 +24,7 @@
   - **git config \<key>：** 查看某项配置，如：git config user.name
 
 - ## 上传
-
+  
   - **git add：** 跟踪文件
 
     ```
@@ -28,6 +36,7 @@
 
     ```
     git commit -m "提交描述" // 提交文件到暂存区
+    git commit --amend: 修改最后一次提交，即用新的提交覆盖旧的提交
     ```
 
   - **git push：** 推送本地缓存区的文件至远程仓库
