@@ -1,4 +1,0 @@
-[C#](./ComputerLanguage/C#/MultiThread)
-
-
-
