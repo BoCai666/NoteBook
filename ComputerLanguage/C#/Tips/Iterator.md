@@ -6,7 +6,7 @@
 
 - ## 实现方式
 
-  - **IEnumerable、IEnumerable\<T>：**一个集合能够被遍历（foreach）访问内部元素，需继承实现该接口
+  - **IEnumerable、IEnumerable\<T>：** 一个集合能够被遍历（foreach）访问内部元素，需继承实现该接口
 
   ```C#
   	class MyCollection : IEnumerable
@@ -21,7 +21,7 @@
 
   
 
-  - **IEnumerator、IEnumerator\<T>：**实现该接口的类即为迭代器
+  - **IEnumerator、IEnumerator\<T>：** 实现该接口的类即为迭代器
 
   ```c#
   	class MyIterator : IEnumerator
@@ -48,9 +48,9 @@
 
 - ## yield 
 
-  - **yield break：**终止迭代器继续迭代
+  - **yield break：** 终止迭代器继续迭代
 
-  - **yield return：**上述实现迭代器的步骤比较繁杂，C#通过yield关键字可快速实现一个迭代器，是一种语法糖。
+  - **yield return：** 上述实现迭代器的步骤比较繁杂，C#通过yield关键字可快速实现一个迭代器，是一种语法糖。
 
     - **yield return所在方法返回值为IEnumerator**
 

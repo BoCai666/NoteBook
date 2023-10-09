@@ -59,7 +59,7 @@
 
 - ## string
 
-  ```apl
+  ```c#
   C#.NetCore 默认启用使用随机生成hash算法来生成string的HashCode，为了避免网络方面Hash攻击导致Hash溢出，使HashTable这类的数据结构在存储数据时Hash碰撞太多，复杂度由o(1)变为o(n^2)。
   随机生成hash的算法，每次运行程序时同样的string变量的HashCode都会不一致。
   
