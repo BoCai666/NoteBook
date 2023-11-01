@@ -13,9 +13,27 @@ socket.Bind(new IPEndPoint(ipAddress, 12345));
 // 开始监听连接，设置最大连接数为10
 socket.Listen(10);
 
-// 接收连接(阻塞)
+// 接受连接(阻塞)
 socket.Accept();
 
 // 连接(阻塞)
 socket.Connect();
+
+// 发送(阻塞)
+socket.Send();
+
+// 接收(阻塞)
+socket.Receive();
+
+// 接受连接（异步）
+socket.BeginAccept();
+
+// 连接（异步）
+socket.BeginConnect();
+
+// 发送（异步）
+socket.BeginSend();
+
+// 接收（异步）
+socket.BeginReceive();
 ```
