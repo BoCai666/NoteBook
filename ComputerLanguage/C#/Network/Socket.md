@@ -1,5 +1,5 @@
 ## API
-```c#
+```csharp
 // 创建基于Udp的Socket
 Socket socket = new Socket(AddressFamily.InterNetwork, SocketType.Dgram, ProtocolType.Udp);
 
@@ -36,4 +36,10 @@ socket.BeginSend();
 
 // 接收（异步）
 socket.BeginReceive();
+
+// 禁止接收和发送消息 关闭Socket前总是应该先调用Shutdown方法。这能够确保在已连接的Socket关闭前，其上的所有数据都发送和接收完成
+socket.Shutdown();
+
+// 关闭socket释放非托管资源
+socket.Close();
 ```
