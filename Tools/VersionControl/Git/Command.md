@@ -6,6 +6,7 @@
 
     ```
     git clone <仓库地址> <文件夹名>
+    git clone <仓库地址> <文件夹名> --recursive // 克隆仓库并初始化子模块
     ```
   - **git checkout**
     ```
@@ -68,3 +69,10 @@
     git remote -v：查看远程仓库信息
     ```
     
+- ## submodule
+  submodule允许你将一个Git仓库当作另外一个Git仓库的子目录，submodule本质上是另一个代码仓库，对submodule的修改，只能在submodule对应的代码仓库修改和提交，然后由父代码仓库更新它下面的submodule最新状态
+  ```
+  git submodule // 查看子模块
+  git submodule add <子项目url> <子项目存放到本地的文件夹名> // 添加子模块
+  git submodule update --remote // 更新子模块为远程最新版本
+  ```
