@@ -76,6 +76,10 @@
   }
   ```
 
+- ## StrcutLayout
+  - **LayoutKind.Auto：** 运行时自动选择字段的布局。这可能会根据特定的实现和机器架构进行优化（类的默认布局方式）
+  - **LayoutKind.Sequential：** 字段将按照它们在代码中声明的顺序进行布局（结构体的默认布局方式）
+  - **LayoutKind.Explicit：** 开发者可以显式控制每个字段的位置。通过FieldOffset属性可以指定每个字段的位置
   
 
   
