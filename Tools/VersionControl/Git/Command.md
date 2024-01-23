@@ -46,11 +46,13 @@
     ```
 
   - **git push：** 推送本地仓库的文件至远程仓库
+    ```
+    git push --set-upstream origin 分支名：用于将本地分支推送到远程仓库，并同时建立本地分支与远程分支之间的关联（后续可直接使用git push推送）
+    ```
 
 - ## 拉取
 
   - **git pull：** 拉取远程文件并与本地版本合并， 是`git fetch` 和 `git merge FETCH_HEAD` 的简写
-
     ```
     git pull <远程主机名> <远程分支名>:<本地分支名>
     ```
@@ -67,6 +69,7 @@
   
     ```
     git remote -v：查看远程仓库信息
+    git remote add origin "仓库地址"：添加远程仓库地址
     ```
     
 - ## submodule
