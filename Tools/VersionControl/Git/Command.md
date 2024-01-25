@@ -71,7 +71,15 @@
     git remote -v：查看远程仓库信息
     git remote add origin "仓库地址"：添加远程仓库地址
     ```
-    
+- ## 分支
+  master：指代默认分支  
+  origin：远程克隆仓库的默认名字
+  ```git
+  git branch -a：查看所有分支
+  git branch -d 分支名：删除分支
+  git branch 分支名：创建分支
+  git checkout 分支名：切换分支
+  ```    
 - ## submodule
   submodule允许你将一个Git仓库当作另外一个Git仓库的子目录，submodule本质上是另一个代码仓库，对submodule的修改，只能在submodule对应的代码仓库修改和提交，然后由父代码仓库更新它下面的submodule最新状态
   ```
